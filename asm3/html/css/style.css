@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  /* padding: 10px 20px; */
+}
+i {
+  color: #199cdb;
+}
+button {
+  background-color: #199cdb;
+  color: #ddd;
+  border: 0px;
+  border-radius: 15px;
+  margin-left: 10px;
+  height: 30px;
+  width: 30%;
+  font-size: 16px;
+}
+
+/* CHỨNG CHỈ */
+.certificate {
+  background-color: #fbf8fb;
+  margin: 20px;
+}
+.certificate .container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.certificate .section-title {
+  margin-bottom: 15px;
+}
+.grid-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #da7f25;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.grid-item img {
+  width: 45%;
+  margin: 10px;
+}
+.grid-item .grid-item-content {
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+.Cert_DBI {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-right: 1px solid #da7f25;
+}
+.Cert_Cert_PRF {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.Cert_WEB {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-bottom: 0px;
+}
+
+/* Project */
+.project .container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.project .project-item {
+  display: grid;
+  grid-template-rows: 35% 20% 10% 35%;
+  margin: 10px;
+}
+.project .project-item-years {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.project p {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+}
+.project i {
+  width: 30px;
+}
+.project .project-item-title h3 {
+  padding: 20px;
+}
+.project button {
+  border-radius: 15px;
+  width: 80%;
+  height: 30px;
+  padding-bottom: 3px;
+}
+.project tr {
+  box-shadow: 0 -1px 1px rgb(59, 57, 57);
+}
+.project .project-item-content {
+  line-height: 1.5;
+}
+.project img {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+/* Footer */
+/* .footer .container {
+  margin-top: 40px;
+  padding-left: 30%;
+  font-size: 24px;
+} */
