@@ -1,4 +1,7 @@
-@media (min-width: 993px) {
+@media (min-width: 1200px) {
+  i {
+    color: #199cdb;
+  }
   /* phần banner */
   .banner {
     position: relative;
@@ -20,8 +23,13 @@
     text-align: center;
     background-color: white;
     overflow: visible;
+    width: 100%;
+    background-color: whitesmoke;
   }
-
+  .navbar-laptop .row {
+    width: 100%;
+    align-self: center;
+  }
   .navbar-laptop a {
     display: inline-block;
     color: black;
@@ -32,19 +40,31 @@
   }
   .navbar-laptop a.avartar {
     box-shadow: none;
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
+  }
+  .avatar-item {
+    height: min-content;
+    width: min-content;
   }
   .navbar-item {
     /* height: 50px;
     width: 90px;
     width: max-content;
     position: relative; */
+    border: 1px solid #9ea2a3;
     box-shadow: 1px 1px 1px rgb(161, 158, 158);
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 5px;
     /* border-radius: 50%;
     top: -180px;
     margin-bottom: 15%;
     left: -10%; */
+  }
+  .avartar-item {
+    width: fit-content;
   }
   #avartar .navbar-item {
     border: 0px;
@@ -55,6 +75,7 @@
   /* Nav - bar */
   .navbar-laptop .row {
     margin-top: -5%;
+    margin-bottom: -5%;
   }
   .navbar-laptop a:hover {
     background-color: #ddd;
@@ -82,7 +103,8 @@
   .about {
     position: relative;
     width: 100%;
-    background-color: #efe4e4;
+    background-color: #f7f7f7;
+    align-items: stretch;
   }
   .about h1 {
     margin-top: 30px;
@@ -96,22 +118,22 @@
     padding-left: 0px;
   }
   /* Mục tiêu nghề nghiệp */
-  .about .target {
-    background-color: #f2efef;
+  .target {
+    background-color: #adbcc3;
     padding-right: 30px;
     padding-left: 200px;
     font-size: 16px;
     justify-items: end;
     line-height: 1.8;
     font-family: "et-line", sans-serif;
-    align-items: stretch;
   }
   .about .personal-info {
     padding-left: 30px;
     justify-items: start;
+    background-color: rgb(166, 200, 214);
   }
   .about .personal-info .info-icon {
-    color: #199cdb;
+    color: #0c1bf0;
     padding-top: 15px;
     margin-bottom: 20px;
   }
@@ -136,8 +158,11 @@
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
-    font-size: 2em;
+    font-size: 1em;
     align-self: center;
+  }
+  .job-info h3 {
+    font-size: larger;
   }
   .job-info-item {
     border: 1px solid rgb(188, 185, 185);
@@ -229,6 +254,160 @@
   width: 45px;
   margin: 10px 5px;
 }
+/* CHỨNG CHỈ
+.certificate {
+  height: max-content;
+}
+.certificate .section-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 45%;
+  margin: 10px;
+}
+
+.certificate .grid-item-content h3 {
+  font-size: medium;
+}
+/* Project */
+/* .project .container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.project .project-item {
+  display: grid;
+  grid-template-rows: 35% 20% 10% 35%;
+  margin: 10px;
+}
+.project .project-item-years {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.project p {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+}
+.project i {
+  width: 30px;
+}
+.project .project-item-title h3 {
+  padding: 20px;
+}
+.project button {
+  border-radius: 15px;
+  width: 80%;
+  height: 30px;
+  padding-bottom: 3px;
+}
+.project tr {
+  box-shadow: 0 -1px 1px rgb(59, 57, 57);
+}
+.project .project-item-content {
+  line-height: 1.5;
+}
+.project img {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+*/
+*/
+/* CHỨNG CHỈ */
+.certificate {
+  background-color: #fbf8fb;
+  margin: 20px;
+  height: 100%;
+}
+.certificate .grid-item-content {
+  text-align: start;
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 10px;
+}
+.certificate .grid-item-content h3 {
+  font-size: large;
+}
+.certificate .section-title {
+  margin-bottom: 15px;
+}
+.grid-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #da7f25;
+  margin: 15px 0px;
+}
+
+.grid-item img {
+  width: 45%;
+  margin: 10px;
+}
+.grid-item .grid-item-content {
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+/* Project */
+.project .project-item {
+  margin-right: 2rem;
+  border: 1px solid rgb(188, 185, 185);
+  box-shadow: 2px 4px 5px rgb(188, 185, 185);
+  padding: 15px;
+}
+.project .project-item-years {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  width: 100%;
+}
+.project h3 {
+  font-size: large;
+}
+.project p {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+}
+.project a {
+  text-decoration: none;
+  text-decoration-color: black;
+}
+.project i {
+  width: 30px;
+}
+.project .project-item-title h3 {
+  padding: 20px;
+}
+.project button {
+  border-radius: 15px;
+  width: 80%;
+  height: 30px;
+  padding-bottom: 3px;
+}
+.project tr {
+  box-shadow: 0 -1px 1px rgb(59, 57, 57);
+}
+.project .project-item-content {
+  border: 1px soild black;
+  text-align: start;
+  color: black;
+  line-height: 1.5;
+}
+.project img {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 
 .footer i {
