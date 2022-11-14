@@ -1,4 +1,4 @@
-@media (min-width: 220px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   i {
     color: #199cdb;
   }
@@ -118,8 +118,7 @@
   /* Mục tiêu nghề nghiệp */
   .target {
     background-color: #adbcc3;
-    padding-right: 30px;
-    padding-left: 200px;
+    padding-left: 40px;
     font-size: 16px;
     justify-items: end;
     line-height: 1.8;
@@ -160,7 +159,7 @@
     align-self: center;
   }
   .job-info-item {
-    height: 500px;
+    height: max-content;
     border: 1px solid rgb(188, 185, 185);
     box-shadow: 2px 2px 5px rgb(188, 185, 185);
   }
@@ -203,7 +202,6 @@
     line-height: 1.8;
   }
   /* học vấn */
-
   .education .job-info-content {
     line-height: 1.7;
     margin: 10px;
