@@ -386,10 +386,16 @@
     padding: 20px;
   }
   .project button {
+    border: 1px solid #199cdb;
+    background-color: #199cdb;
+    border-radius: 1px 1px 1px white;
     border-radius: 15px;
-    width: 80%;
-    height: 30px;
+    width: 100px;
+    height: fit-content;
     padding-bottom: 3px;
+  }
+  .project span {
+    color: #f7f7f7;
   }
   .project tr {
     box-shadow: 0 -1px 1px rgb(59, 57, 57);
